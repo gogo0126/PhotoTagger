@@ -16,7 +16,18 @@
 		93EF0CAB1BF41DA20051B5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93EF0CAA1BF41DA20051B5B1 /* Assets.xcassets */; };
 		93EF0CAE1BF41DA20051B5B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93EF0CAC1BF41DA20051B5B1 /* LaunchScreen.storyboard */; };
 		9569363E1E0B06AC00B49A5A /* TagsColorTableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569363D1E0B06AC00B49A5A /* TagsColorTableData.swift */; };
+		DE73C14621F6D23B00365428 /* ImaggaRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE73C14421F6D1D200365428 /* ImaggaRouter.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE73C14321F6D1D200365428 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE73C13F21F6D1D200365428 /* ImaggaRouter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DE73C13421F6B24800365428;
+			remoteInfo = ImaggaRouter;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		932ED1F61BF9390D0072C1C4 /* PhotoColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoColor.swift; sourceTree = "<group>"; };
@@ -30,6 +41,7 @@
 		93EF0CAD1BF41DA20051B5B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93EF0CAF1BF41DA20051B5B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9569363D1E0B06AC00B49A5A /* TagsColorTableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsColorTableData.swift; sourceTree = "<group>"; };
+		DE73C13F21F6D1D200365428 /* ImaggaRouter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ImaggaRouter.xcodeproj; path = Frameworks/Internal/ImaggaRouter/ImaggaRouter.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE73C14621F6D23B00365428 /* ImaggaRouter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,8 +59,10 @@
 		93EF0C971BF41DA20051B5B1 = {
 			isa = PBXGroup;
 			children = (
+				DE73C13F21F6D1D200365428 /* ImaggaRouter.xcodeproj */,
 				93EF0CA21BF41DA20051B5B1 /* PhotoTagger */,
 				93EF0CA11BF41DA20051B5B1 /* Products */,
+				DE73C14521F6D23B00365428 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -76,6 +91,21 @@
 				93EF0CA51BF41DA20051B5B1 /* ViewController.swift */,
 			);
 			path = PhotoTagger;
+			sourceTree = "<group>";
+		};
+		DE73C14021F6D1D200365428 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE73C14421F6D1D200365428 /* ImaggaRouter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE73C14521F6D23B00365428 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,12 +155,28 @@
 			mainGroup = 93EF0C971BF41DA20051B5B1;
 			productRefGroup = 93EF0CA11BF41DA20051B5B1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DE73C14021F6D1D200365428 /* Products */;
+					ProjectRef = DE73C13F21F6D1D200365428 /* ImaggaRouter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				93EF0C9F1BF41DA20051B5B1 /* PhotoTagger */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DE73C14421F6D1D200365428 /* ImaggaRouter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ImaggaRouter.framework;
+			remoteRef = DE73C14321F6D1D200365428 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		93EF0C9E1BF41DA20051B5B1 /* Resources */ = {
